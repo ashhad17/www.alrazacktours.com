@@ -32,6 +32,9 @@ a{
 .bld{
     font-weight: bold;
 }
+.opn,.close{
+    display: none;
+}
 nav {
     display: flex;
     justify-content: space-between;
