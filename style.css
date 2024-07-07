@@ -547,7 +547,9 @@ iframe{
     margin-bottom: 2rem;
     color: #004d99;
 }
-
+.opn,.close{
+    display: none;
+}
 .form-container {
     display: flex;
     justify-content: center;
