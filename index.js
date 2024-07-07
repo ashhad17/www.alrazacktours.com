@@ -31,3 +31,26 @@ document.addEventListener('DOMContentLoaded', function () {
  https://www.makkahhaj.com/wp-content/uploads/2018/05/umrah-1.jpg
  https://www.makkahhaj.com/wp-content/uploads/2018/09/Banner.jpg
  */
+
+ function myFunction() {
+    var x = document.querySelector(".nav-content");
+    var open=document.querySelector(".opn");
+    var close=document.querySelector(".close");
+    var icon=document.querySelector(".icon");
+
+      x.style.display = "block";
+      open.style.display="none";
+    close.style.display="block"
+    
+  }
+  function myFunctionClose() {
+    var x = document.querySelector(".nav-content");
+    var open=document.querySelector(".opn");
+    var close=document.querySelector(".close");
+    var icon=document.querySelector(".icon");
+    
+    open.style.display="block";
+    x.style.display = "none";
+  close.style.display="none";
+    
+  }

@@ -23,6 +23,9 @@ a{
     color: white;
     font-size: larger;
 }
+.open{
+    display: none;
+}
 .top a{
     color: wheat;
 }
@@ -652,8 +655,11 @@ color: wheat;
         text-align: center;
         
     }
+    /* .hero-slide{
+        width: 90%;
+    } */
     .hero{
-        height: 60vh;
+    margin: 5%;
     }
     .about{
         flex-direction: column;
@@ -725,5 +731,45 @@ color: wheat;
 height: fit-content;
 width: 100%;
 margin: 0px;
+      }
+      .open{
+        display: block;
+      }
+      nav .logo{
+
+        display: flex;
+        justify-content: space-between;
+      }
+      #log{
+        height: 50px;
+      }
+      .nav-content{
+        display: none;
+      }
+      nav{
+        display: flex;
+      }
+      .close{
+        display: none;
+      }
+      nav a.icon {
+        /* background: black; */
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 40%;
+        left: 90%;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+      }
+      
+      nav a:hover{
+        background-color: #ddd;
+        color: black;
+      }
+      .menu-active{
+        background-color: #04AA6D;
+        color: white;
       }
 }
