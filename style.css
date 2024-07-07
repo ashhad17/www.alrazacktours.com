@@ -1,0 +1,632 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
+body {
+    font-family: 'M PLUS Rounded 1c', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+a{
+    text-decoration: none;
+}
+.top{
+    width: 100%;
+    height: 80px;
+    background-color: #004d99;
+    top: 0;
+    z-index: 0;
+    position: sticky;
+    z-index: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    font-size: larger;
+}
+.top a{
+    color: wheat;
+}
+.bld{
+    font-weight: bold;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding-left: 3rem;
+    padding-right:3rem ;
+    position: sticky;
+    top: 70px;
+    z-index: 1;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}#log{
+    height:100px;
+    width: 300px;
+    
+}
+nav .logo {
+    display: flex;
+    align-items: center;
+}
+
+nav .logo img {
+    height: 200px; /* Adjust the height as needed */
+    width: 200px;  /* Keeps the aspect ratio */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+nav ul li {
+    margin-left: 1.5rem;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+.box {
+    height: 644px;
+    width: 100%;
+    /* opacity: ; */
+    position: absolute;
+    top: 0;
+    background-color: black;
+}
+.hero {
+    margin-top: 10px;
+    position: relative;
+    height: 80vh;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.hero-slide {
+    /* margin: 10px; */
+    position: absolute;
+    top: 20;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    display: none;
+}
+
+.hero-slide.active {
+    display: block;
+}
+
+.hero-slide h1 {
+    margin-top: 30vh;
+    font-size: 2rem;
+    margin-bottom: 5rem;
+    font-weight: bold;
+}
+.abt-btn{
+    padding: 1.5rem 1.5rem;
+    border: none;
+    background-color: #ffcc00;
+    color: #333;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.pkg-btn{
+    padding: 1.5rem 2.5rem;
+    width: auto;
+    border: none;
+    background-color: #ffcc00;
+    color: #333;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    /* margin-top: 15px; */
+}
+.pkg-btn:hover{
+    background-color:#ffaa00;
+    
+    color: white;
+}
+
+#abt-btn:hover {
+    background-color: #ffaa00;
+}
+.hero-slide button {
+    padding: 1.75rem 2.5rem;
+    border: none;
+    background-color: #ffcc00;
+    color: #333;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 100px;
+}
+
+.hero-slide button:hover {
+    background-color: #ffaa00;
+}
+
+.packages {
+    text-align: center;
+    padding: 3rem 1rem;
+    background-color: #f0f0f0;
+}
+
+.packages h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #ffffff;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.card {
+    background-color: #fff;
+    font-size: 1.5rem;
+    color: #000000;
+    /* padding: 1.5rem; */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    max-width: 500px;
+    height: 650px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: justify;
+    /* padding-left: 5%; */
+    /* text-align: justify; */
+}
+.content-card{
+    padding-left: 7%;
+}
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    color: #212121;
+    margin-bottom: 1rem;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #004d99;
+    font-weight: bold;
+}
+.card img{
+    width: 100%;
+    height: 45%;
+}
+.card .btn{
+    display: flex;
+    justify-content: center;
+}
+.single-package {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #fff;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem 1rem;
+    background-color: #004d99;
+    color: #fff;
+    /* flex-wrap: nowrap; */
+    margin-top: 45px;
+    font-size: 1rem;
+}
+
+.footer-content {
+    max-width: 300px;
+    margin-bottom: 1rem;
+}
+
+.footer-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.footer-content p {
+    font-size: 1rem;
+}
+.social-media{
+    margin-top: 25px;
+}
+.social-media a {
+    display: grid;
+    grid-column: 1r 1r;
+    color: #ffcc00;
+    text-decoration: none;
+    margin-right: 0.5rem;
+    margin-bottom: 1rem;
+    transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+    color: #ffaa00;
+}
+.flip{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
+    
+
+}
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    border-radius: 10%;
+    margin-left: 25px;
+    margin-top:25px;
+    margin-bottom: 25px;
+    background-color: transparent;
+    width: 400px;
+    height: 450px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    position: relative;
+    
+  }
+/* .flip-card-front{
+    position: relative;
+} */
+  .text{
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-weight: bold;
+  font-size: 2rem;
+
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+    background-color: black;
+    opacity: .8 ;
+    
+    /* position: relative; */
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: #004d99;
+    color: rgb(255, 255, 255);
+    transform: rotateY(180deg);
+    padding: 1.5rem;
+    text-align: center;
+    margin-bottom: 25px;
+
+  }
+  .flip-card-back p{
+    text-align: justify;
+    font-size: 1.3rem;
+  }
+  .flip-card-back h1{
+    font-size: 2rem;
+
+  }.flip-card-back h4{
+    font-size: 1.5rem;
+    
+  }
+  .pkg-bt{
+    display: flex;
+    justify-content: center;
+  }
+  .flip-card-back button{
+
+    position: fixed;
+    bottom: 10px;
+  }
+  .about{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+    background: rgb(255, 255, 255);
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .about-content>h1{
+    font-size: 3rem;
+  }
+  .about-content>p{
+text-align: justify;
+margin-right: 10px;
+padding-right:200px ;
+font-size: 1.2rem;
+margin-bottom: 3rem;
+  }
+  
+  .container {
+    margin-left: 10%;
+    margin-bottom: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* gap: 10px; */
+    width: 80%;
+    max-width: 800px;
+    right: 20px;
+}
+
+.grid-item {
+    /* top: 10; */
+    /* background-color: #81d4fa; */
+    /* padding: 20px; */
+    /* border-radius: 8px; */
+    width: auto;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    text-align: center;
+    /* text-align: center; */
+    font-size: 1.2em;
+    color: black;
+}
+@media (max-width:450px){
+    .top{
+        display: block;
+    }
+    nav{
+        display: block;
+    }
+    nav ul{
+        display: block;
+        text-align: center;
+        
+    }
+}
+.banner{
+    /* width: 1090px; */
+    /* height: 200px; */
+    width: 100%;
+    height: 350px;
+}
+.banner img{
+    width: 100%;
+    height: 100%; 
+    /* /* height: 30%; */
+}
+
+.about-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.about-container .abt{
+    margin: 50px;
+    letter-spacing: 1.2px;
+    line-height: 26px;
+}
+.about-container .abt p{
+    text-align: justify;
+}
+.about-container .founder-img{
+ margin-right: 50px;
+}
+
+.ico{
+    width: 10%;
+    margin-right:10px ;
+}
+
+.whatsapp,.facebook,.instagram{
+    display: flex;
+    margin-bottom: 20px;
+    
+}
+iframe{
+    width: 300px;
+    height: 300px;
+}
+.contact-content{
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    /* justify-content: space-around; */
+    align-items: flex-start;
+    
+}
+.phone{
+
+}
+.phone,.email,.location{
+    margin: auto;
+  width: 50%;
+  /* border: 3px solid green; */
+  padding: 10px;
+    /* margin: 15px; */
+    border-radius: 20px;
+    margin-left:20px ;
+    background-color:rgb(242, 246, 245);
+    height: 500px;
+    text-align: center;
+}
+.phone,.email,.location p{
+    text-align: center;
+    font-size: 1.2rem;
+    
+}
+.phone h1{
+    text-align: center;
+    color: #004d99;
+}
+.email h1{
+    text-align: center;
+    color: #004d99;
+}
+.location h1{
+    color: #004d99;
+
+}
+
+
+
+
+
+  .contact {
+    padding: 3rem 1rem;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #004d99;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 75%;
+    width: 100%;
+}
+
+form label {
+    display: flex;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    background-color: #004d99;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+form button:hover {
+    background-color: #003366;
+}
+
+.price{
+    background-color: #004d99;
+    width: 300px;
+    text-align: center;
+}
+.price h1{
+background-color: #012243;
+color: wheat;
+}
+
+
+
+/* Package Details */
+.pkg-container{
+    display: flex;
+    flex-flow: row wrap;
+}
+.container-pkg {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+.package-details {
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+.package-details h2 {
+    text-align: center;
+    color: #333;
+}
+.package-details ul {
+    list-style-type: none;
+    padding: 0;
+}
+.package-details li {
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+}
+.package-details li span {
+    font-weight: bold;
+}
+
